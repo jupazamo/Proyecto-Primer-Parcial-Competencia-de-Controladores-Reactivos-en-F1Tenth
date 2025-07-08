@@ -1,9 +1,18 @@
 # F1TENTH – Controlador Reactivo
 
-![ROS 2 Humble](https://img.shields.io/badge/ROS2-Humble-blue) ![Python 3.10](https://img.shields.io/badge/Python-3.10-green) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow)
+&#x20;&#x20;
 
 > **DisparityExtenderNode**  |  Estable a **7 m/s** durante **10 vueltas**
 > Basado en la estrategia *Follow‑the‑Gap* + extensión de disparidades
+
+---
+
+## 🎥 Evidencias en video
+
+| Descripción                                                                      | Enlace                                       |
+| -------------------------------------------------------------------------------- | -------------------------------------------- |
+| Robot completando **10 vueltas** con contador de vueltas y cronómetro por vuelta | [🔗 Ver video](https://youtu.be/M5sZzdezW5M) |
+| Robot **esquivando 5 obstáculos** durante 5 vueltas                              | [🔗 Ver video](https://youtu.be/yBp00ISa7pc) |
 
 ---
 
@@ -17,9 +26,10 @@
 | [4. Ejecución](#4-ejecución)                      | Comandos rápidos & lanzamiento con *launch* |
 | [5. Parámetros](#5-parámetros)                    | Lista comentada de parámetros ROS 2         |
 | [6. Vueltas & cronómetro](#6-vueltas--cronómetro) | Nodo auxiliar de métricas de carrera        |
-| [7. Simulación Gazebo](#7-simulación-gazebo)      | Ejecutar en el mundo de competición         |
-| [8. FAQ](#8-faq)                                  | Solución de problemas comunes               |
-| [9. Licencia](#9-licencia)                        | Términos de uso                             |
+| [7. Mapas de simulación](#7-mapas-de-simulación)  | Pistas empleadas y cómo cargarlas           |
+| [8. Simulación Gazebo](#8-simulación-gazebo)      | Ejecutar en el mundo de competición         |
+| [9. FAQ](#9-faq)                                  | Solución de problemas comunes               |
+| [10. Licencia](#10-licencia)                      | Términos de uso                             |
 
 ---
 
@@ -35,18 +45,18 @@ El controlador amplía **Follow‑the‑Gap** mediante la **extensión de dispar
    * *Limitador de timón* (`max_steer_rate_deg`)
    * *Look‑ahead* frontal y reducción proporcional de velocidad
 
-<p align="center"><img src="https://raw.githubusercontent.com/widegonz/F1Tenth-Repository/main/docs/fg_scheme.png" width="520"></p>
-
 ---
 
 ## 2. Árbol de proyecto
+
+> **Nota:** el repositorio versionado incluye únicamente la carpeta `src/`; las rutas mostradas a continuación son relativas a ella.
 
 ```text
 └── gap_follow_pkg/
     ├── gap_follower.py       # DisparityExtenderNode
     ├── lap_counter.py        # Vueltas + cronómetro
     ├── launch/
-    │   └── race_launch.py    # Lanza ambos nodos
+    │   └── dual_launch.launch    # Lanza ambos nodos
     ├── package.xml
     └── setup.py
 ```
@@ -58,7 +68,7 @@ El controlador amplía **Follow‑the‑Gap** mediante la **extensión de dispar
 ```bash
 cd ~/ros2_ws/src
 # ⬇️ Clona tu fork
-git clone https://github.com/<TU‑USUARIO>/gap_follow_pkg.git
+git clone https://github.com/jupazamo/Proyecto-Primer-Parcial-Competencia-de-Controladores-Reactivos-en-F1Tenth.git
 cd ..
 colcon build --symlink-install
 source install/setup.bash
@@ -79,7 +89,7 @@ ros2 run gap_follow_pkg gap_follower
 ### Controlador + métricas (recomendado)
 
 ```bash
-ros2 launch gap_follow_pkg race_launch.py
+ros2 launch gap_follow_pkg dual_launch.launch
 ```
 
 Se inicia `rviz` con la línea de meta para el `LapCounterNode`.
@@ -110,10 +120,17 @@ ros2 param set /disparity_extender speed_max 10.0
 `LapCounterNode` publica en `/lap_info`:
 
 ```yaml
-total_laps:      10
-last_lap_time:   11.97   # [s]
-avg_lap_time:    12.11
-best_lap_time:   11.80
+lap_times_s:
+  - 70.22  # Lap 1
+  - 69.40  # Lap 2
+  - 140.62 # Lap 3 (obstáculo + rebote)
+  - 69.89  # Lap 4
+  - 69.95  # Lap 5
+  - 68.80  # Lap 6
+  - 139.96 # Lap 7 (doble sobrepaso)
+  - 70.11  # Lap 8
+  - 68.06  # Lap 9
+  - 69.04  # Lap 10
 ```
 
 Ver en directo:
@@ -122,42 +139,40 @@ Ver en directo:
 ros2 topic echo /lap_info
 ```
 
-*Implementación*: cruza un plano `map` definido en *x=0*, usa histéresis de 2 m para evitar doble conteo.
+*Implementación*: cruza un plano `map` definido en *x = 0*, usa histéresis de 2 m para evitar doble conteo.
 
 ---
 
-## 7. Simulación Gazebo
+## 7. Mapas de simulación
+
+> Los ficheros `.png` y `.yaml` se encuentran en `src/f1tenth_gym_ros/maps/` y se copian automáticamente al compilar el paquete.
+
+### 7.1 Pista base
+
+| Vista | Descripción                                                                                                                                             |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|       | Mapa **Budapest** (≈ 240 m) con 8 curvas (5 izquierda / 3 derecha). La línea de meta se sitúa en **x = 0 m** del *frame map* para el conteo de vueltas. |
+
+### 7.2 Pista con obstáculos
+
+| Vista | Descripción                                                                                                                                                                    |   |                                                                                                                                               |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | - | --------------------------------------------------------------------------------------------------------------------------------------------- |
+|       | Mismo trazado **Budapest** con **5 obstáculos** distribuidos en rectas y salidas de curva (cubos de \~0.25 m³). El desafío consiste en completar **5 vueltas** sin colisiones. |   | Mismo circuito con **5 cubos de 0.25 m³** colocados en rectas y salidas de curva. El reto consiste en completar **5 vueltas** sin colisiones. |
+
+---
+
+## 8. Simulación Gazebo
 
 ```bash
-# Lanzar pista ejemplo
-ros2 launch f1tenth_gazebo race_track.launch.py
-# Ejecutar controlador
-ros2 launch gap_follow_pkg race_launch.py
+# Lanzar simulación (pista Budapest **o** variante con obstáculos)
+ros2 launch f1tenth_gym_ros gym_bridge_launch.py
+
+# Ejecutar controlador + métricas
+ros2 launch gap_follow_pkg dual_launch.launch
 ```
 
----
-
-## 8. FAQ
-
-<details>
-<summary>Oscila en rectas</summary>
-⬇️ Reduce `steer_smoothing_alpha` o incrementa `angle_speed_factor`.
-</details>
-<details>
-<summary>Se queda girando en un punto</summary>
-⬇️ Sube `blocked_min_scale` a ≥ 0.75 o `max_steer_rate_deg` a 25 °.
-</details>
-<details>
-<summary>Choca en curvas cerradas</summary>
-⬆️ Aumenta `front_sector_deg` a 25 ° y `blocked_dist_thresh` a 2 m.
-</details>
+> 🔧 **Tip** Para alternar entre la pista base y la versión con **5 obstáculos**
+> edita `src/f1tenth_gym_ros/config/sim.yaml` y ajusta la clave `map_path`
+> apuntando a `Budapest_map.png` (base) o `Budapest_map_modified.png` (obstáculos).
 
 ---
-
-## 9. Licencia
-
-MIT © 2024 *Tu Nombre / Universidad XYZ*
-
----
-
-¡A correr! 🏁🚀
