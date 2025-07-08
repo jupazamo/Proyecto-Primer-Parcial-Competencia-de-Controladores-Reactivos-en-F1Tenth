@@ -2,7 +2,7 @@
 
 ![ROS 2 Humble](https://img.shields.io/badge/ROS2-Humble-blue) ![Python 3.10](https://img.shields.io/badge/Python-3.10-green) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow)
 
-> **DisparityExtenderNode – Iteración 4**  |  Estable a **8 m/s** durante **10 vueltas**
+> **DisparityExtenderNode**  |  Estable a **7 m/s** durante **10 vueltas**
 > Basado en la estrategia *Follow‑the‑Gap* + extensión de disparidades
 
 ---
