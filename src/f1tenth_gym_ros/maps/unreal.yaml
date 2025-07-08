@@ -1,0 +1,6 @@
+image: unreal.png
+resolution: 0.0286
+origin: [-12.1, -2.2714, 0.0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
