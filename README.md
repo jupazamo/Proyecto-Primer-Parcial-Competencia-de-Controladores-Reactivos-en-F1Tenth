@@ -52,24 +52,29 @@ El controlador amplía **Follow‑the‑Gap** mediante la **extensión de dispar
 > **Nota:** el repositorio versionado incluye únicamente la carpeta `src/`; las rutas mostradas a continuación son relativas a ella.
 
 ```text
-└── gap_follow_pkg/
-    ├── gap_follower.py       # DisparityExtenderNode
-    ├── lap_counter.py        # Vueltas + cronómetro
-    ├── launch/
-    │   └── dual_launch.launch    # Lanza ambos nodos
-    ├── package.xml
-    └── setup.py
+└── src/
+    ├── gap_follow_pkg/
+    │   ├── gap_follow_pkg/
+    │   │   ├── gap_follower.py       # DisparityExtenderNode
+    │   │   ├── lap_timer.py          # Vueltas + cronómetro
+    │   ├── launch/
+    │   │   └── dual_launch.launch.py    # Lanza ambos nodos
+    │   └── setup.py
+    └── f1tenth_gym_ros/
+        └── maps/
+            ├── Budapest_map.png          # pista sin obstáculos
+            └── Budapest_map_modified.png # pista con 5 obstáculos
 ```
 
 ---
 
 ## 3. Instalación
-
+Partimos desde tu HOME (~) — la ruta que usa sim.yaml busca exactamente ~/F1Tenth-Repository:
 ```bash
-cd ~/ros2_ws/src
-# ⬇️ Clona tu fork
-git clone https://github.com/jupazamo/Proyecto-Primer-Parcial-Competencia-de-Controladores-Reactivos-en-F1Tenth.git
-cd ..
+cd ~
+# ⬇️ Clona el repositorio (o tu fork)
+git clone https://github.com/jupazamo/Proyecto-Primer-Parcial-Competencia-de-Controladores-Reactivos-en-F1Tenth.git F1Tenth-Repository
+cd F1Tenth-Repository
 colcon build --symlink-install
 source install/setup.bash
 ```
@@ -100,7 +105,7 @@ Se inicia `rviz` con la línea de meta para el `LapCounterNode`.
 
 | Parámetro             | Default    | Descripción                           |
 | --------------------- | ---------- | ------------------------------------- |
-| `speed_max`           | `9.0` m/s  | Velocidad máxima en recta             |
+| `speed_max`           | `7.0` m/s  | Velocidad máxima en recta             |
 | `accel_step`          | `0.25` m/s | Aumento (↓) máximo por ciclo          |
 | `max_steer_rate_deg`  | `20` °     | Cambio de timón permitido por *frame* |
 | `front_sector_deg`    | `20` °     | Semicono frontal para anticipación    |
