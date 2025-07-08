@@ -1,0 +1,30 @@
+[0.658s] Invoking command in '/home/jupazamo/F1Tenth-Repository/src/my_gap_pkg': PYTHONPATH=/home/jupazamo/F1Tenth-Repository/build/my_gap_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jupazamo/F1Tenth-Repository/install/my_gap_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_gap_pkg build --build-base /home/jupazamo/F1Tenth-Repository/build/my_gap_pkg/build install --record /home/jupazamo/F1Tenth-Repository/build/my_gap_pkg/install.log --single-version-externally-managed install_data
+[0.807s] running egg_info
+[0.808s] writing ../../build/my_gap_pkg/my_gap_pkg.egg-info/PKG-INFO
+[0.808s] writing dependency_links to ../../build/my_gap_pkg/my_gap_pkg.egg-info/dependency_links.txt
+[0.808s] writing entry points to ../../build/my_gap_pkg/my_gap_pkg.egg-info/entry_points.txt
+[0.808s] writing requirements to ../../build/my_gap_pkg/my_gap_pkg.egg-info/requires.txt
+[0.808s] writing top-level names to ../../build/my_gap_pkg/my_gap_pkg.egg-info/top_level.txt
+[0.809s] reading manifest file '../../build/my_gap_pkg/my_gap_pkg.egg-info/SOURCES.txt'
+[0.809s] adding license file 'LICENSE'
+[0.810s] writing manifest file '../../build/my_gap_pkg/my_gap_pkg.egg-info/SOURCES.txt'
+[0.810s] running build
+[0.810s] running build_py
+[0.810s] copying my_gap_pkg/gap_follower.py -> /home/jupazamo/F1Tenth-Repository/build/my_gap_pkg/build/lib/my_gap_pkg
+[0.810s] copying my_gap_pkg/lap_timer.py -> /home/jupazamo/F1Tenth-Repository/build/my_gap_pkg/build/lib/my_gap_pkg
+[0.810s] running install
+[0.810s] running install_lib
+[0.811s] copying /home/jupazamo/F1Tenth-Repository/build/my_gap_pkg/build/lib/my_gap_pkg/gap_follower.py -> /home/jupazamo/F1Tenth-Repository/install/my_gap_pkg/lib/python3.10/site-packages/my_gap_pkg
+[0.811s] copying /home/jupazamo/F1Tenth-Repository/build/my_gap_pkg/build/lib/my_gap_pkg/lap_timer.py -> /home/jupazamo/F1Tenth-Repository/install/my_gap_pkg/lib/python3.10/site-packages/my_gap_pkg
+[0.811s] byte-compiling /home/jupazamo/F1Tenth-Repository/install/my_gap_pkg/lib/python3.10/site-packages/my_gap_pkg/gap_follower.py to gap_follower.cpython-310.pyc
+[0.813s] byte-compiling /home/jupazamo/F1Tenth-Repository/install/my_gap_pkg/lib/python3.10/site-packages/my_gap_pkg/lap_timer.py to lap_timer.cpython-310.pyc
+[0.814s] running install_data
+[0.814s] copying launch/dual_launch.launch.py -> /home/jupazamo/F1Tenth-Repository/install/my_gap_pkg/share/my_gap_pkg/launch
+[0.814s] running install_egg_info
+[0.815s] removing '/home/jupazamo/F1Tenth-Repository/install/my_gap_pkg/lib/python3.10/site-packages/my_gap_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.815s] Copying ../../build/my_gap_pkg/my_gap_pkg.egg-info to /home/jupazamo/F1Tenth-Repository/install/my_gap_pkg/lib/python3.10/site-packages/my_gap_pkg-0.0.0-py3.10.egg-info
+[0.816s] running install_scripts
+[0.829s] Installing gap_follower script to /home/jupazamo/F1Tenth-Repository/install/my_gap_pkg/lib/my_gap_pkg
+[0.830s] Installing lap_timer script to /home/jupazamo/F1Tenth-Repository/install/my_gap_pkg/lib/my_gap_pkg
+[0.830s] writing list of installed files to '/home/jupazamo/F1Tenth-Repository/build/my_gap_pkg/install.log'
+[0.848s] Invoked command in '/home/jupazamo/F1Tenth-Repository/src/my_gap_pkg' returned '0': PYTHONPATH=/home/jupazamo/F1Tenth-Repository/build/my_gap_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jupazamo/F1Tenth-Repository/install/my_gap_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_gap_pkg build --build-base /home/jupazamo/F1Tenth-Repository/build/my_gap_pkg/build install --record /home/jupazamo/F1Tenth-Repository/build/my_gap_pkg/install.log --single-version-externally-managed install_data

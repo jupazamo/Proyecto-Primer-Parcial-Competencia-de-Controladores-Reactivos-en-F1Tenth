@@ -1,0 +1,22 @@
+[0.515s] Invoking command in '/home/jupazamo/F1Tenth-Repository/src/f1tenth_gym_ros': PYTHONPATH=/home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/f1tenth_gym_ros build --build-base /home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/build install --record /home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/install.log --single-version-externally-managed install_data
+[0.654s] running egg_info
+[0.655s] writing ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/PKG-INFO
+[0.655s] writing dependency_links to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/dependency_links.txt
+[0.655s] writing entry points to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/entry_points.txt
+[0.655s] writing requirements to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/requires.txt
+[0.655s] writing top-level names to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/top_level.txt
+[0.656s] reading manifest file '../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/SOURCES.txt'
+[0.656s] adding license file 'LICENSE'
+[0.657s] writing manifest file '../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/SOURCES.txt'
+[0.657s] running build
+[0.657s] running build_py
+[0.657s] running install
+[0.657s] running install_lib
+[0.658s] running install_data
+[0.658s] running install_egg_info
+[0.659s] removing '/home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/lib/python3.10/site-packages/f1tenth_gym_ros-0.0.0-py3.10.egg-info' (and everything under it)
+[0.659s] Copying ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info to /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/lib/python3.10/site-packages/f1tenth_gym_ros-0.0.0-py3.10.egg-info
+[0.660s] running install_scripts
+[0.673s] Installing gym_bridge script to /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/lib/f1tenth_gym_ros
+[0.673s] writing list of installed files to '/home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/install.log'
+[0.694s] Invoked command in '/home/jupazamo/F1Tenth-Repository/src/f1tenth_gym_ros' returned '0': PYTHONPATH=/home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/f1tenth_gym_ros build --build-base /home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/build install --record /home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/install.log --single-version-externally-managed install_data

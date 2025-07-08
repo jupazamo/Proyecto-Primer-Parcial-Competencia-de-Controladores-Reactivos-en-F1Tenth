@@ -1,0 +1,45 @@
+[0.702s] Invoking command in '/home/jupazamo/F1Tenth-Repository/src/f1tenth_gym_ros': PYTHONPATH=/home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/f1tenth_gym_ros build --build-base /home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/build install --record /home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/install.log --single-version-externally-managed install_data
+[0.854s] running egg_info
+[0.854s] creating ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info
+[0.854s] writing ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/PKG-INFO
+[0.854s] writing dependency_links to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/dependency_links.txt
+[0.855s] writing entry points to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/entry_points.txt
+[0.855s] writing requirements to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/requires.txt
+[0.855s] writing top-level names to ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/top_level.txt
+[0.855s] writing manifest file '../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/SOURCES.txt'
+[0.856s] reading manifest file '../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/SOURCES.txt'
+[0.856s] adding license file 'LICENSE'
+[0.856s] writing manifest file '../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info/SOURCES.txt'
+[0.856s] running build
+[0.856s] running build_py
+[0.857s] creating /home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/build
+[0.857s] creating /home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/build/lib
+[0.857s] creating /home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/build/lib/f1tenth_gym_ros
+[0.857s] copying f1tenth_gym_ros/__init__.py -> /home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/build/lib/f1tenth_gym_ros
+[0.857s] copying f1tenth_gym_ros/gym_bridge.py -> /home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/build/lib/f1tenth_gym_ros
+[0.857s] running install
+[0.857s] running install_lib
+[0.858s] creating /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/lib/python3.10/site-packages/f1tenth_gym_ros
+[0.858s] copying /home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/build/lib/f1tenth_gym_ros/__init__.py -> /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/lib/python3.10/site-packages/f1tenth_gym_ros
+[0.858s] copying /home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/build/lib/f1tenth_gym_ros/gym_bridge.py -> /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/lib/python3.10/site-packages/f1tenth_gym_ros
+[0.858s] byte-compiling /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/lib/python3.10/site-packages/f1tenth_gym_ros/__init__.py to __init__.cpython-310.pyc
+[0.858s] byte-compiling /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/lib/python3.10/site-packages/f1tenth_gym_ros/gym_bridge.py to gym_bridge.cpython-310.pyc
+[0.860s] running install_data
+[0.860s] creating /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/share/ament_index
+[0.860s] creating /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/share/ament_index/resource_index
+[0.860s] creating /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/share/ament_index/resource_index/packages
+[0.860s] copying resource/f1tenth_gym_ros -> /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/share/ament_index/resource_index/packages
+[0.860s] copying package.xml -> /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/share/f1tenth_gym_ros
+[0.860s] creating /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/share/f1tenth_gym_ros/launch
+[0.861s] copying launch/gym_bridge_launch.py -> /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/share/f1tenth_gym_ros/launch
+[0.861s] copying launch/ego_racecar.xacro -> /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/share/f1tenth_gym_ros/launch
+[0.861s] copying launch/opp_racecar.xacro -> /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/share/f1tenth_gym_ros/launch
+[0.861s] copying launch/gym_bridge.rviz -> /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/share/f1tenth_gym_ros/launch
+[0.861s] creating /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/share/f1tenth_gym_ros/config
+[0.861s] copying config/sim.yaml -> /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/share/f1tenth_gym_ros/config
+[0.861s] running install_egg_info
+[0.862s] Copying ../../build/f1tenth_gym_ros/f1tenth_gym_ros.egg-info to /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/lib/python3.10/site-packages/f1tenth_gym_ros-0.0.0-py3.10.egg-info
+[0.862s] running install_scripts
+[0.875s] Installing gym_bridge script to /home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/lib/f1tenth_gym_ros
+[0.876s] writing list of installed files to '/home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/install.log'
+[0.899s] Invoked command in '/home/jupazamo/F1Tenth-Repository/src/f1tenth_gym_ros' returned '0': PYTHONPATH=/home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jupazamo/F1Tenth-Repository/install/f1tenth_gym_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/f1tenth_gym_ros build --build-base /home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/build install --record /home/jupazamo/F1Tenth-Repository/build/f1tenth_gym_ros/install.log --single-version-externally-managed install_data

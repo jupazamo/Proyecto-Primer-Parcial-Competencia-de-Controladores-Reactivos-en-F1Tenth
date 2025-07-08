@@ -1,0 +1,165 @@
+[0.064s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.064s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x781e37754400>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x781e3771f820>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x781e3771f820>>)
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.166s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.166s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jupazamo/F1Tenth-Repository/src'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(f1tenth_gym_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(f1tenth_gym_ros) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(f1tenth_gym_ros) by extension 'ignore_ament_install'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(f1tenth_gym_ros) by extensions ['colcon_pkg']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(f1tenth_gym_ros) by extension 'colcon_pkg'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(f1tenth_gym_ros) by extensions ['colcon_meta']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(f1tenth_gym_ros) by extension 'colcon_meta'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(f1tenth_gym_ros) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(f1tenth_gym_ros) by extension 'ros'
+[0.176s] DEBUG:colcon.colcon_core.package_identification:Package 'f1tenth_gym_ros' with type 'ros.ament_python' and name 'f1tenth_gym_ros'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(gap_follow_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(gap_follow_pkg) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(gap_follow_pkg) by extension 'ignore_ament_install'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(gap_follow_pkg) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(gap_follow_pkg) by extension 'colcon_pkg'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(gap_follow_pkg) by extensions ['colcon_meta']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(gap_follow_pkg) by extension 'colcon_meta'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(gap_follow_pkg) by extensions ['ros']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(gap_follow_pkg) by extension 'ros'
+[0.177s] DEBUG:colcon.colcon_core.package_identification:Failed to parse potential ROS package manifest in'gap_follow_pkg': Error(s) in package 'gap_follow_pkg/package.xml':
+The manifest contains invalid XML:
+junk after document element: line 23, column 0
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(gap_follow_pkg) by extensions ['cmake', 'python']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(gap_follow_pkg) by extension 'cmake'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(gap_follow_pkg) by extension 'python'
+[0.177s] DEBUG:colcon.colcon_core.package_identification:Python package in 'gap_follow_pkg' passes arguments to the setup() function which requires a different identification extension than 'python'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(gap_follow_pkg) by extensions ['python_setup_py']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(gap_follow_pkg) by extension 'python_setup_py'
+[0.325s] DEBUG:colcon.colcon_core.package_identification:Package 'gap_follow_pkg' with type 'python' and name 'gap_follow_pkg'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.326s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.326s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.326s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.326s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.326s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.345s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.345s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.346s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/jupazamo/F1Tenth-Repository/install
+[0.347s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 284 installed packages in /opt/ros/humble
+[0.348s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'cmake_args' from command line to 'None'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'cmake_target' from command line to 'None'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.370s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'f1tenth_gym_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.371s] DEBUG:colcon.colcon_core.verb:Building package 'f1tenth_gym_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jupazamo/F1Tenth-Repository/src/build/f1tenth_gym_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros', 'merge_install': False, 'path': '/home/jupazamo/F1Tenth-Repository/src/f1tenth_gym_ros', 'symlink_install': False, 'test_result_base': None}
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'gap_follow_pkg' build argument 'cmake_args' from command line to 'None'
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'gap_follow_pkg' build argument 'cmake_target' from command line to 'None'
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'gap_follow_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'gap_follow_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'gap_follow_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'gap_follow_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'gap_follow_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'gap_follow_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.371s] Level 5:colcon.colcon_core.verb:set package 'gap_follow_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.371s] DEBUG:colcon.colcon_core.verb:Building package 'gap_follow_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jupazamo/F1Tenth-Repository/src/build/gap_follow_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jupazamo/F1Tenth-Repository/src/install/gap_follow_pkg', 'merge_install': False, 'path': '/home/jupazamo/F1Tenth-Repository/src/gap_follow_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.371s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.372s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.372s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jupazamo/F1Tenth-Repository/src/f1tenth_gym_ros' with build type 'ament_python'
+[0.372s] Level 1:colcon.colcon_core.shell:create_environment_hook('f1tenth_gym_ros', 'ament_prefix_path')
+[0.373s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/hook/ament_prefix_path.ps1'
+[0.374s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/hook/ament_prefix_path.dsv'
+[0.374s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/hook/ament_prefix_path.sh'
+[0.374s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.375s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.376s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jupazamo/F1Tenth-Repository/src/gap_follow_pkg'
+[0.377s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.377s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.532s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jupazamo/F1Tenth-Repository/src/f1tenth_gym_ros'
+[0.532s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.532s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.895s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jupazamo/F1Tenth-Repository/src/f1tenth_gym_ros': PYTHONPATH=/home/jupazamo/F1Tenth-Repository/src/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/f1tenth_gym_ros build --build-base /home/jupazamo/F1Tenth-Repository/src/build/f1tenth_gym_ros/build install --record /home/jupazamo/F1Tenth-Repository/src/build/f1tenth_gym_ros/install.log --single-version-externally-managed install_data
+[0.896s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jupazamo/F1Tenth-Repository/src/gap_follow_pkg': PYTHONPATH=/home/jupazamo/F1Tenth-Repository/src/build/gap_follow_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jupazamo/F1Tenth-Repository/src/install/gap_follow_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/gap_follow_pkg build --build-base /home/jupazamo/F1Tenth-Repository/src/build/gap_follow_pkg/build install --record /home/jupazamo/F1Tenth-Repository/src/build/gap_follow_pkg/install.log --single-version-externally-managed install_data
+[1.080s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jupazamo/F1Tenth-Repository/src/f1tenth_gym_ros' returned '0': PYTHONPATH=/home/jupazamo/F1Tenth-Repository/src/build/f1tenth_gym_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/f1tenth_gym_ros build --build-base /home/jupazamo/F1Tenth-Repository/src/build/f1tenth_gym_ros/build install --record /home/jupazamo/F1Tenth-Repository/src/build/f1tenth_gym_ros/install.log --single-version-externally-managed install_data
+[1.082s] Level 1:colcon.colcon_core.environment:checking '/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros' for CMake module files
+[1.082s] Level 1:colcon.colcon_core.environment:checking '/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros' for CMake config files
+[1.082s] Level 1:colcon.colcon_core.environment:checking '/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros/lib'
+[1.082s] Level 1:colcon.colcon_core.environment:checking '/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros/bin'
+[1.082s] Level 1:colcon.colcon_core.environment:checking '/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros/lib/pkgconfig/f1tenth_gym_ros.pc'
+[1.083s] Level 1:colcon.colcon_core.environment:checking '/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros/lib/python3.10/site-packages'
+[1.083s] Level 1:colcon.colcon_core.shell:create_environment_hook('f1tenth_gym_ros', 'pythonpath')
+[1.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/hook/pythonpath.ps1'
+[1.083s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/hook/pythonpath.dsv'
+[1.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/hook/pythonpath.sh'
+[1.084s] Level 1:colcon.colcon_core.environment:checking '/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros/bin'
+[1.084s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(f1tenth_gym_ros)
+[1.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/package.ps1'
+[1.084s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/package.dsv'
+[1.085s] INFO:colcon.colcon_core.shell:Creating package script '/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/package.sh'
+[1.085s] INFO:colcon.colcon_core.shell:Creating package script '/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/package.bash'
+[1.086s] INFO:colcon.colcon_core.shell:Creating package script '/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros/share/f1tenth_gym_ros/package.zsh'
+[1.086s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jupazamo/F1Tenth-Repository/src/install/f1tenth_gym_ros/share/colcon-core/packages/f1tenth_gym_ros)
+[1.087s] Level 1:colcon.colcon_core.environment:checking '/home/jupazamo/F1Tenth-Repository/src/install/gap_follow_pkg' for CMake module files
+[1.087s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jupazamo/F1Tenth-Repository/src/gap_follow_pkg' returned '0': PYTHONPATH=/home/jupazamo/F1Tenth-Repository/src/build/gap_follow_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jupazamo/F1Tenth-Repository/src/install/gap_follow_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/gap_follow_pkg build --build-base /home/jupazamo/F1Tenth-Repository/src/build/gap_follow_pkg/build install --record /home/jupazamo/F1Tenth-Repository/src/build/gap_follow_pkg/install.log --single-version-externally-managed install_data
+[1.087s] Level 1:colcon.colcon_core.environment:checking '/home/jupazamo/F1Tenth-Repository/src/install/gap_follow_pkg' for CMake config files
+[1.087s] Level 1:colcon.colcon_core.environment:checking '/home/jupazamo/F1Tenth-Repository/src/install/gap_follow_pkg/lib'
+[1.088s] Level 1:colcon.colcon_core.environment:checking '/home/jupazamo/F1Tenth-Repository/src/install/gap_follow_pkg/bin'
+[1.088s] Level 1:colcon.colcon_core.environment:checking '/home/jupazamo/F1Tenth-Repository/src/install/gap_follow_pkg/lib/pkgconfig/gap_follow_pkg.pc'
+[1.088s] Level 1:colcon.colcon_core.environment:checking '/home/jupazamo/F1Tenth-Repository/src/install/gap_follow_pkg/lib/python3.10/site-packages'
+[1.088s] Level 1:colcon.colcon_core.shell:create_environment_hook('gap_follow_pkg', 'pythonpath')
+[1.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jupazamo/F1Tenth-Repository/src/install/gap_follow_pkg/share/gap_follow_pkg/hook/pythonpath.ps1'
+[1.088s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jupazamo/F1Tenth-Repository/src/install/gap_follow_pkg/share/gap_follow_pkg/hook/pythonpath.dsv'
+[1.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jupazamo/F1Tenth-Repository/src/install/gap_follow_pkg/share/gap_follow_pkg/hook/pythonpath.sh'
+[1.089s] Level 1:colcon.colcon_core.environment:checking '/home/jupazamo/F1Tenth-Repository/src/install/gap_follow_pkg/bin'
+[1.089s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gap_follow_pkg)
+[1.089s] INFO:colcon.colcon_core.shell:Creating package script '/home/jupazamo/F1Tenth-Repository/src/install/gap_follow_pkg/share/gap_follow_pkg/package.ps1'
+[1.089s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jupazamo/F1Tenth-Repository/src/install/gap_follow_pkg/share/gap_follow_pkg/package.dsv'
+[1.089s] INFO:colcon.colcon_core.shell:Creating package script '/home/jupazamo/F1Tenth-Repository/src/install/gap_follow_pkg/share/gap_follow_pkg/package.sh'
+[1.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/jupazamo/F1Tenth-Repository/src/install/gap_follow_pkg/share/gap_follow_pkg/package.bash'
+[1.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/jupazamo/F1Tenth-Repository/src/install/gap_follow_pkg/share/gap_follow_pkg/package.zsh'
+[1.090s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jupazamo/F1Tenth-Repository/src/install/gap_follow_pkg/share/colcon-core/packages/gap_follow_pkg)
+[1.090s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.090s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.090s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.090s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.093s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.094s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.094s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.101s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.101s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jupazamo/F1Tenth-Repository/src/install/local_setup.ps1'
+[1.102s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jupazamo/F1Tenth-Repository/src/install/_local_setup_util_ps1.py'
+[1.103s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jupazamo/F1Tenth-Repository/src/install/setup.ps1'
+[1.104s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jupazamo/F1Tenth-Repository/src/install/local_setup.sh'
+[1.104s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jupazamo/F1Tenth-Repository/src/install/_local_setup_util_sh.py'
+[1.104s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jupazamo/F1Tenth-Repository/src/install/setup.sh'
+[1.105s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jupazamo/F1Tenth-Repository/src/install/local_setup.bash'
+[1.105s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jupazamo/F1Tenth-Repository/src/install/setup.bash'
+[1.106s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jupazamo/F1Tenth-Repository/src/install/local_setup.zsh'
+[1.106s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jupazamo/F1Tenth-Repository/src/install/setup.zsh'

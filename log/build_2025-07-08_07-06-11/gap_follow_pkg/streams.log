@@ -1,0 +1,4 @@
+[0.198s] Invoking command in '/home/jupazamo/F1Tenth-Repository/build/gap_follow_pkg': /usr/bin/cmake /home/jupazamo/F1Tenth-Repository/src/gap_follow_pkg -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/jupazamo/F1Tenth-Repository/install/gap_follow_pkg
+[0.203s] [0mCMake Error: The source directory "/home/jupazamo/F1Tenth-Repository/src/gap_follow_pkg" does not appear to contain CMakeLists.txt.
+[0.203s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.204s] Invoked command in '/home/jupazamo/F1Tenth-Repository/build/gap_follow_pkg' returned '1': /usr/bin/cmake /home/jupazamo/F1Tenth-Repository/src/gap_follow_pkg -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/jupazamo/F1Tenth-Repository/install/gap_follow_pkg

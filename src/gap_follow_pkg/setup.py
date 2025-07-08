@@ -28,7 +28,6 @@ setup(
     entry_points={
     'console_scripts': [
         'gap_follower = gap_follow_pkg.gap_follower:main',
-        'trajectory_logger = gap_follow_pkg.trajectory_logger:main',
         "lap_timer    = gap_follow_pkg.lap_timer:main",
         ],
     },
